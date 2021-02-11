@@ -1,0 +1,186 @@
+
+
+
+
+
+
+/* top banner
+================================================*/
+.TopBennar{
+  background-image: url("../Images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:400px;
+  background-attachment: fixed;
+}
+.topContent{
+  text-align: center;
+
+}
+.contentH1{
+  margin-top: 50px;
+  color:white;
+  font-size: 50px;
+}
+/* navbar
+================================================*/
+.navBarItem{
+  background-color: dodgerblue !important;
+  border-bottom: rgba(0,200,0,0.8) !important;
+}
+.navColorChang{
+  color:white;
+}
+.NavLogo{
+  width:30px;
+}
+/* find job
+================================================*/
+.popSearch{
+  margin-top: 40px;
+}
+.findJob{
+  background-color: beige;
+}
+.findJobHeading{
+  margin-top: 50px;
+}
+.JobHeading{
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 70px;
+}
+/* find job card box
+================================================*/
+.cardBox{
+  width:15rem;
+  margin-bottom: 10px;
+  border-radius: 10px;
+text-align: center;
+
+}
+.ExclusiveJob {
+  background-image: url("../Images/bg1.jpg");
+  height: 300px;
+}
+.moreJobsButton{
+ margin-bottom: 50px;
+}
+.moreJobsButton2{
+  margin-top: -130px;
+}
+.moreJobsButton3{
+  margin-top: -130px;
+}
+.moreJobsH2{
+  padding-top: 30px;
+}
+.hiringHeading{
+  text-align: center;
+  font-style: italic;
+  font-size: 35px;
+  font-weight: bold;
+  margin:80px 0 0 20px;
+}
+.hiringHeading:hover{
+  color:lightseagreen;
+}
+.slick-slide img {
+  display: inline-block !important;
+}
+.carouselImg{
+  margin-top:120px;
+}
+.carouselBtn{
+  margin-left:300px;
+  margin-top: 30px;
+}
+.TopRecurmentHeadig{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 2px solid saddlebrown;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 30px 1px red;
+}
+.agency{
+  margin: 30px 20px 20px;
+  text-align:center;
+  padding:50px;
+  background-color: aliceblue;
+}
+.footerA a{
+    text-decoration: none;
+
+}
+/*
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    margin-top: 40px;
+    margin-left: 450px;
+}*/
+.copyRight{
+    background-color: #007bff;
+    padding: 5px;
+    color:ghostwhite;
+    text-align: inherit;
+}
+.form-controlForm {
+
+  width: 68%  !important;
+}
+
+.buttonForm{
+  margin-left:197px;
+}
+.jobFind{
+  margin-top:50px;
+}
+.loginBg{
+  background-color: ghostwhite;
+  border-radius: 15px;
+  padding: 5px;
+}
+/* creat cv
+===================================*/
+.cvHeading{
+  margin-top: 220px;
+}
+.form-control {
+  width: 68% !important;
+}
+/*=====================*/
+.findCountryJob{
+    padding: 10px;
+    text-align: center;
+    width: 286px;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+.divCountry{
+    margin: auto;
+    width: 50%;
+}
+#jobBox{
+    background: #ff794d;
+    width: 115px;
+    height: 150px;
+    text-align: center;
+}
+.jobHeading{
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+.jobHeading:hover{
+    color: #a9e68a;
+}
+.SalsProduct{
+ margin-top: 70px;
+}
+.salsHeading{
+   margin-top: 80px;
+    color: #67e62e;
+}
