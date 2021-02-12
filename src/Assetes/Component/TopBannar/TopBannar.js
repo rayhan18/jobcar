@@ -10,24 +10,47 @@ class TopBannar extends Component {
                   <Row>
                       <Col>
                           <h1 className="contentH1">FIND JOBS, NETWORK AND LEARN</h1>
-                          <h5 className="text-white">Join the Middle East's #1 Job Site</h5>
-                          <Navbar className="bg-light justify-content-between">
-                             <Form inline>
-                                 <FormControl TYPE ="TEXT" PLACEHOLDER="jOB Title"/>
-                             </Form>
-                              <Form inline>
-                                  <FormControl type="text" placeholder="City" className=" mr-sm-2" />
-                              </Form>
-                                  <Form inline>
-
-                                      <FormControl type="text" placeholder="country name" className=" mr-sm-2" />
-                                  <Button type="submit">Submit</Button>
-                              </Form>
-                          </Navbar>
+                          <h5 className="text-white">Join the Populer Job Site</h5>
+                          
                       </Col>
                   </Row>
+                  <Row className="formStyle">
+                 <Col>
+                 <Form className="formControl">
+                    <Form.Row className="formControl">
+                    <Form.Group as={Col} controlId="formGridTitle">
+                   
+                    <Form.Control type="text" placeholder="Enter Job Title" />
+                    </Form.Group>
 
+                        <Form.Group as={Col} controlId="formGridState">
+                       
+                        <Form.Control as="select" defaultValue="Choose...">
+                            <option>City</option>
+                            <option>...</option>
+                        </Form.Control>
+                        </Form.Group>
+                        <Form.Group as={Col} controlId="formGridState">
+                       
+                        <Form.Control as="select" defaultValue="Choose...">
+                            <option>Country</option>
+                            <option>...</option>
+                        </Form.Control>
+                        </Form.Group>
+                        <Form.Group id="formGridCheckbox">
+                             <Button variant="primary" type="submit">
+                                Submit
+                            </Button>
+                            </Form.Group>
+
+  
+                     </Form.Row>
+                  </Form>
+                 </Col>
+             </Row>
               </Container>
+            
+                    
             </Container>
             </Fragment>
     )

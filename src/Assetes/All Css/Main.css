@@ -19,9 +19,24 @@
 
 }
 .contentH1{
-  margin-top: 50px;
+  margin-top: 100px;
   color:white;
   font-size: 50px;
+}
+.contentH1:hover{
+  color: #ff794d;
+}
+.formStyle{
+  height: 80px;
+  padding: auto;
+  background-color: aliceblue;
+}
+.formControl{
+  margin-top: 20px;
+}
+.form-control {
+    width: 100% !important;
+    margin-top: 0px;
 }
 /* navbar
 ================================================*/
@@ -35,10 +50,30 @@
 .NavLogo{
   width:30px;
 }
+.navBarItem {
+  background-color: #063d73 !important;
+  height: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(248 249 250);
+  height: 50px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(184, 178, 190);
+  border-bottom: 3px solid wheat;
+  overflow: none;
+ 
+}
 /* find job
 ================================================*/
 .popSearch{
   margin-top: 40px;
+}
+.jobBtn{
+  margin-top: 20px;
+}
+.btnStyle{
+  border-radius: 30px;
 }
 .findJob{
   background-color: beige;
@@ -52,6 +87,7 @@
   text-align: center;
   padding: 70px;
 }
+
 /* find job card box
 ================================================*/
 .cardBox{
@@ -149,9 +185,9 @@ text-align: center;
 .cvHeading{
   margin-top: 220px;
 }
-.form-control {
+/* .form-control {
   width: 68% !important;
-}
+} */
 /*=====================*/
 .findCountryJob{
     padding: 10px;
