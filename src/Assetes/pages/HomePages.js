@@ -10,6 +10,7 @@ import History from "../Component/History/History";
 import FindJobMain from "../Component/FindJobMain/FindJobMain";
 import PostJob from "../Component/PostJob/PostJob";
 
+
 class HomePages extends Component {
     render() {
 
@@ -18,6 +19,7 @@ class HomePages extends Component {
                 <NavBar/>
                 <TopBannar/>
                 <PopulerSerch/>
+               
                 <FindJob/>
                 <History/>
                  <Hiring/>

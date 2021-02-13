@@ -75,19 +75,17 @@
 .btnStyle{
   border-radius: 30px;
 }
-.findJob{
-  background-color: beige;
-}
-.findJobHeading{
-  margin-top: 50px;
-}
+
+
 .JobHeading{
-  margin-top: 70px;
+ 
   margin-bottom: 30px;
   text-align: center;
-  padding: 70px;
+    margin-top: 20px;
 }
-
+.JobHeading:hover{
+  color: #007bff;
+}
 /* find job card box
 ================================================*/
 .cardBox{
