@@ -10,6 +10,7 @@ import logos from "../../Images/logo3.jpg";
 import scholars from "../../Images/logo scholars.png";
 import lode from "../../Images/download (1).jpg";
 import {Button} from "react-bootstrap";
+import {Link} from 'react-router-dom'
 
 class Hiring extends Component {
     
@@ -24,12 +25,16 @@ class Hiring extends Component {
             slidesToScroll: 1
         };
 
-
+        const containerStyle={
+            background:'#9CA0F9',
+            padding:'20px'
+        }
 
         return (
             <Fragment>
+                <Container fluid={true} style={containerStyle} >
                 <h2 className="hiringHeading">Who's Hiring on JOBCAR.com</h2>
-                <Container className="carouselImg">
+                <Container fluid={true} className="carouselImg">
 
                 <hr/>
                     <div>
@@ -39,7 +44,7 @@ class Hiring extends Component {
 
                         <div className="container">
 
-                            <img style={{width:'150px',marginRight:'10px'}}src={lode}/>
+                         <Link to="#"><img style={{width:'150px',marginRight:'10px'}}src={lode}/> </Link>   
                         </div>
                         <div>
                         <img style={{width:'150px',marginRight:'10px'}}src={logo1}/>
@@ -66,7 +71,8 @@ class Hiring extends Component {
                     </div>
                 </Container>
 
-                <Button className=" " variant="outline-primary ml-auto mr-auto carouselBtn">Is your company hiring ? join  4,000 over employer</Button>{' '}
+                <Button  variant="outline-primary bg-white carouselBtn"> <strong className="text-info">Is your company hiring ?</strong><span style={{color:'tomato'}}>  join  4,000 over employer Jobscar.com</span></Button>{' '}
+                </Container>
             </Fragment>
         );
     }

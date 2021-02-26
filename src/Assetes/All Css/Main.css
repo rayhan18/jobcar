@@ -118,18 +118,19 @@ text-align: center;
   font-weight: bold;
   margin:0px 0 0 0px;
 }
-.hiringHeading:hover{
-  color:lightseagreen;
-}
+
 .slick-slide img {
   display: inline-block !important;
 }
 .carouselImg{
   margin-top:20px;
+  background: white;
+  padding: 10px;
 }
 .carouselBtn{
-  margin-left:300px;
-  margin-top: 30px;
+  margin-left:500px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .TopRecurmentHeadig{
   margin-top: 40px;
