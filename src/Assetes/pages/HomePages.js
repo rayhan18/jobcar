@@ -21,7 +21,7 @@ class HomePages extends Component {
                 <PopulerSerch/>
                
                 <FindJob/>
-                <History/>
+              
                  <Hiring/>
                 <FindJobMain/>
 

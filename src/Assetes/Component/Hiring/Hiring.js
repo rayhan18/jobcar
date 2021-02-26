@@ -12,19 +12,15 @@ import lode from "../../Images/download (1).jpg";
 import {Button} from "react-bootstrap";
 
 class Hiring extends Component {
-    state = {
-        display: true,
-        width: 950,
-
-    };
+    
     render() {
         const settings = {
             autoplay:true,
             autoplaySpeed:4000,
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 3000,
-            slidesToShow: 4,
+            slidesToShow: 5,
             slidesToScroll: 1
         };
 
@@ -35,44 +31,42 @@ class Hiring extends Component {
                 <h2 className="hiringHeading">Who's Hiring on JOBCAR.com</h2>
                 <Container className="carouselImg">
 
-
-                    <div
-                        style={{
-                            width: this.state.width + "px",
-                            display: this.state.display ? "block" : "none"
-                        }}
-                    >
-
-<hr/>
-
+                <hr/>
+                    <div>
+                        
+                       
                     <Slider {...settings}>
 
-                        <div >
+                        <div className="container">
 
-                            <img src={apple}/>
+                            <img style={{width:'150px',marginRight:'10px'}}src={lode}/>
                         </div>
                         <div>
-                            <img src={del}/>
+                        <img style={{width:'150px',marginRight:'10px'}}src={logo1}/>
                         </div>
-                            <img src={logos}/>
-                            <div>
-                            <img src={logo1}/>
-                            </div>
-                            <img src={scholars}/>
-                            <div>
-                            <img src={lode}/>
-                            </div>
                         <div>
-                            <img src={logo1}/>
+                        <img style={{width:'150px',marginRight:'10px'}}src={lode}/>
                         </div>
-
+                        <div>
+                        <img style={{width:'150px',marginRight:'10px'}}src={logos}/>
+                        </div>
+                        <div>
+                        <img style={{width:'150px',marginRight:'10px'}}src={lode}/>
+                        </div>
+                        <div>
+                        <img style={{width:'150px',marginRight:'10px'}}src={del}/>
+                        </div>
+                        <div>
+                        <img style={{width:'150px',marginRight:'10px'}}src={lode}/>
+                        </div>
+                        
 
                     </Slider>
                         <hr/>
                     </div>
                 </Container>
 
-                <Button className="carouselBtn" variant="outline-primary">Is your company hiring ? join  4,000 over employer</Button>{' '}
+                <Button className=" " variant="outline-primary ml-auto mr-auto carouselBtn">Is your company hiring ? join  4,000 over employer</Button>{' '}
             </Fragment>
         );
     }
