@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 import logo from "../../Images/apple.jpg";
-
+import {NavLink} from 'react-router-dom'
 
 
 class NavBar extends Component {
@@ -13,12 +13,11 @@ class NavBar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className=" navLink  mr-auto ">
-                            <Nav.Link href="#features" >Home</Nav.Link>
-                            <Nav.Link href="#pricing">Creat your CV</Nav.Link>
+                            <Nav.Link  > <NavLink to='/'> Home</NavLink></Nav.Link>
+                            <Nav.Link > <NavLink to='/creatcv'> Creat your CV</NavLink></Nav.Link>
                             <Nav.Link href="#pricing">Post JOB</Nav.Link>
                             <Nav.Link href="#pricing">Find Job</Nav.Link>
-
-                            
+         
                            
                         </Nav>
                         <Nav>

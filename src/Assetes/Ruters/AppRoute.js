@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Fragment } from 'react'
 import { Switch, Route } from "react-router-dom";
+import CreatYourCvPages from '../pages/CreatYourCvPages';
 import HomePages from '../pages/HomePages';
+
 export default class AppRoute extends Component {
     render() {
         return (
@@ -10,6 +12,7 @@ export default class AppRoute extends Component {
                 <Switch>
                    
                     <Route exact path="/" component={HomePages}/>
+                    <Route exact path="/creatcv" component={CreatYourCvPages}/>
                 </Switch>
                 
             </Fragment>
