@@ -168,9 +168,9 @@ text-align: center;
   width: 68%  !important;
 }
 
-.buttonForm{
+/* .buttonForm{
   margin-left:197px;
-}
+} */
 .jobFind{
   margin-top:50px;
 }
@@ -182,7 +182,23 @@ text-align: center;
 /* creat cv
 ===================================*/
 .cvHeading{
-  margin-top: 220px;
+  margin-right: 100px;
+    margin-top: 120px;
+    padding: 10px;
+    background: #2e20a566;
+    margin-left: 147px;
+}
+.cvAnatherAccount{
+  margin-right: 100px;
+   
+    padding: 10px;
+    background: #f39477;
+    margin-left: 147px;
+   
+
+}
+.cvAnatherAccount a{
+  text-decoration: none;
 }
 /* .form-control {
   width: 68% !important;

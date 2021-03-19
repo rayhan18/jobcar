@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 import logo from "../../Images/apple.jpg";
-import {NavLink} from 'react-router-dom'
+import {NavLink,Link} from 'react-router-dom'
 
 
 class NavBar extends Component {
@@ -15,8 +15,8 @@ class NavBar extends Component {
                         <Nav className=" navLink  mr-auto ">
                             <Nav.Link  > <NavLink to='/'> Home</NavLink></Nav.Link>
                             <Nav.Link > <NavLink to='/creatcv'> Creat your CV</NavLink></Nav.Link>
-                            <Nav.Link href="#pricing">Post JOB</Nav.Link>
-                            <Nav.Link href="#pricing">Find Job</Nav.Link>
+                            <Nav.Link ><Link to ="/postjob">Post JOB</Link> </Nav.Link>
+                            <Nav.Link > <Link to ="#">Find Job</Link></Nav.Link>
          
                            
                         </Nav>
