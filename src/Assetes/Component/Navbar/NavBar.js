@@ -16,7 +16,7 @@ class NavBar extends Component {
                             <Nav.Link  > <NavLink to='/'> Home</NavLink></Nav.Link>
                             <Nav.Link > <NavLink to='/creatcv'> Creat your CV</NavLink></Nav.Link>
                             <Nav.Link ><Link to ="/postjob">Post JOB</Link> </Nav.Link>
-                            <Nav.Link > <Link to ="#">Find Job</Link></Nav.Link>
+                            <Nav.Link > <Link to ="/findjob">Find Job</Link></Nav.Link>
          
                            
                         </Nav>
