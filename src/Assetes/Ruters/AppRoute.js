@@ -7,6 +7,7 @@ import PostJobpages from '../pages/PostJobPages'
 import FindjobPage from '../pages/FindjobPage'
 
 export default class AppRoute extends Component {
+     
     render() {
         return (
             <Fragment>

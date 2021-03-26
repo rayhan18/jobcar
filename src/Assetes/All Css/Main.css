@@ -1,7 +1,9 @@
 
 
 
-
+a:Link{
+  text-decoration: none;
+}
 
 
 /* top banner
@@ -234,4 +236,13 @@ text-align: center;
 .salsHeading{
    margin-top: 80px;
     color: #67e62e;
+}
+.jobCart{
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.jobCart:hover{
+ 
+ background-color: rgb(234, 241, 247);
+ 
 }
