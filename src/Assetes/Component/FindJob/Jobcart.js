@@ -20,7 +20,7 @@ export default function Jobcart(props) {
         }).catch(error=>{
             alert(error.message)
         })
-    },[''])
+    },[0])
     
     return (
         <Fragment>
