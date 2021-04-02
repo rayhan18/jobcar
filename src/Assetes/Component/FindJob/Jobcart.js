@@ -20,7 +20,7 @@ export default function Jobcart(props) {
         }).catch(error=>{
             alert(error.message)
         })
-    },[0])
+    },[])
     
     return (
         <Fragment>
@@ -35,6 +35,7 @@ export default function Jobcart(props) {
                                   <small> Riyadh Mar 21</small>  </h5>
                               <p className="text-secondary ml-5"> {postData.body} 
                              Level:Mid Cereer<br/>  
+                             <small>{postData.id}</small> 
                              </p>
                              <img  style={imgStyle}  src={logo1} alt="logo" />
                                 </div>

@@ -35,9 +35,9 @@ export default class JobDetails extends Component {
                                <Button style ={btnStyle} className='outline-primary ml-auto'>creat job alert</Button> <hr/>
                               
                                </div>
-                              <Jobcart >
+                              <Jobcart />
                                
-                              </Jobcart>
+                              
                            </div>
                         </Col>
                     </Row>

@@ -14,18 +14,17 @@ class NavBar extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className=" navLink  mr-auto ">
                             <Nav.Link  > <NavLink to='/'> Home</NavLink></Nav.Link>
-                            <Nav.Link > <NavLink to='/creatcv'> Creat your CV</NavLink></Nav.Link>
+                            <Nav.Link > <NavLink to='/register'> Creat your CV</NavLink></Nav.Link>
                             <Nav.Link ><Link to ="/postjob">Post JOB</Link> </Nav.Link>
                             <Nav.Link > <Link to ="/findjob">Find Job</Link></Nav.Link>
-         
+                            <Nav.Link > <Link to ="/cvservice">Cv search</Link></Nav.Link>
                            
                         </Nav>
                         <Nav>
-                            <Nav.Link href="/">Register</Nav.Link>
-                            <Nav.Link eventKey={2} href="/">
-                                Login
-                            </Nav.Link>
-                           
+                            <Nav.Link><Link to="#">Contact Us</Link></Nav.Link>
+                            <Nav.Link><Link to="/login"> Login</Link></Nav.Link>
+                            <Nav.Link><Link to="/register">Register</Link></Nav.Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

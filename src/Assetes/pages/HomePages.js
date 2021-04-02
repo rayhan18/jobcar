@@ -4,7 +4,7 @@ import TopBannar from "../Component/TopBannar/TopBannar";
 import PopulerSerch from "../Component/PopulerSerch/PopulerSerch";
 import FindJob from "../Component/FindJob/FindJob";
 import Register from "../Component/Register/Register";
-import Footer from "../Component/footer/footer";
+import Footer from "../Component/footer/Footer";
 import Hiring from "../Component/Hiring/Hiring";
 import History from "../Component/History/History";
 import FindJobMain from "../Component/FindJobMain/FindJobMain";
