@@ -19,7 +19,7 @@ class HomePages extends Component {
             <Fragment>
                 <NavBar/>
                 <TopBannar/>
-                <PopulerSerch/>
+                <PopulerSerch title="Popular Searches in Saudi Arabia"/>
                
                 <FindJob/>
               

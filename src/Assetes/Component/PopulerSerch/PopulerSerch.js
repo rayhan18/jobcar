@@ -6,7 +6,7 @@ class PopulerSerch extends Component {
         return (
             <Fragment>
                 <Container fluid={true} className=" popSearch text-center">
-                   <h2> Popular Searches in Saudi Arabia</h2><hr/>
+                   <h2> {this.props.title}</h2><hr/>
                     <div className="popSearch">
                         <Button variant="outline-primary">exclusive jobs</Button>{' '}
                         <Button variant="outline-primary">jobs for saudi national</Button>{' '}

@@ -30,24 +30,7 @@ export default function JobFilter() {
         <div className="border">
             <h5 className="ml-3"> <FontAwesomeIcon className="ml-3" icon={faFilter} />Filter</h5>
                        
-                       {/* <Accordion defaultActiveKey="0">
-                        <Card>
-                            <Accordion.Toggle as={Card.Header} eventKey="0">
-                            Click me!
-                            </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                        <Card>
-                            <Accordion.Toggle as={Card.Header} eventKey="1">
-                            Click me!
-                            </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! I'm another body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                        </Accordion> */}
+                       
 
                         <p onClick={()=>setToggle(!toggle)} eventKey="0" className="border-bottom border-top">Country <FontAwesomeIcon className="float-right mr-2" icon={faAngleDown} />
                        
