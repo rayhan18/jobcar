@@ -12,18 +12,18 @@ class NavBar extends Component {
                     <Navbar.Brand href="#home"><img className="NavLogo" src={logo}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className=" navLink  mr-auto ">
-                            <Nav.Link  > <NavLink to='/'> Home</NavLink></Nav.Link>
-                            <Nav.Link > <NavLink to='/register'> Creat your CV</NavLink></Nav.Link>
-                            <Nav.Link ><Link to ="/postjob">Post JOB</Link> </Nav.Link>
-                            <Nav.Link > <Link to ="/findjob">Find Job</Link></Nav.Link>
-                            <Nav.Link > <Link to ="/cvservice">Cv search</Link></Nav.Link>
+                        <Nav className=" navLink  mr-auto"  >
+                            <Nav.Link  > <NavLink className="text-white" to='/'> Home</NavLink></Nav.Link>
+                            <Nav.Link > <NavLink  className="text-white" to='/register'> Creat your CV</NavLink></Nav.Link>
+                            <Nav.Link ><Link  className="text-white"to ="/postjob">Post JOB</Link> </Nav.Link>
+                            <Nav.Link > <Link   className="text-white" to ="/findjob">Find Job</Link></Nav.Link>
+                            <Nav.Link > <Link  className="text-white" to ="/cvservice">Cv search</Link></Nav.Link>
                            
                         </Nav>
                         <Nav>
-                            <Nav.Link><Link to="#">Contact Us</Link></Nav.Link>
-                            <Nav.Link><Link to="/login"> Login</Link></Nav.Link>
-                            <Nav.Link><Link to="/register">Register</Link></Nav.Link>
+                            <Nav.Link><Link  className="text-white" to="#">Contact Us</Link></Nav.Link>
+                            <Nav.Link><Link  className="text-white" to="/login"> Login</Link></Nav.Link>
+                            <Nav.Link><Link  className="text-white" to="/register">Register</Link></Nav.Link>
                             
                         </Nav>
                     </Navbar.Collapse>

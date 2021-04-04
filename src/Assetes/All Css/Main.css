@@ -1,3 +1,8 @@
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif */
+
+
+
 
 html {
   scroll-behavior: smooth;
@@ -8,9 +13,18 @@ a:Link{
   text-decoration: none;
 }
 
-
+a:active{
+  color:#f39477
+}
+p,h3,h4,h5{
+  font-family: 'Roboto', sans-serif
+}
+h1,h2{
+  font-family: 'Fira Sans', sans-serif;
+}
 /* top banner
 ================================================*/
+
 .TopBennar{
   background-image: url("../Images/bg1.jpg");
     background-repeat: no-repeat;
