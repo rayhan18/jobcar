@@ -13,7 +13,7 @@ class Footer extends Component {
         }
         return (   
             <Fragment>
-                <Container fluid={true} style={{ background: '#061b82'}} >
+                <Container fluid={true} style={{ background: '#061b82',marginTop:'5px'}} >
                     <Row style={footerStyle}>
                         <Col lg={8} md={8} sm={12}>
                             <h4 className="mt-5 text-white">About jobcar.com</h4>

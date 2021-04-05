@@ -6,6 +6,9 @@ import Footer from '../Component/footer/Footer'
 import NavBar from '../Component/Navbar/NavBar'
 
 export default class CvSearchPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <Fragment>

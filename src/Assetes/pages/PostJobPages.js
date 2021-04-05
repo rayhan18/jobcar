@@ -7,6 +7,9 @@ import Footer from "../Component/footer/Footer";
 import PostJob from "../Component/PostJob/PostJob";
 
 class PostJobPages extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <Fragment>

@@ -7,6 +7,9 @@ import Register from '../Component/Register/Register'
 import RegisterHome from '../Component/Register/RegisterHome'
 
 export default class RegistrPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <Fragment>

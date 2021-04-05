@@ -13,6 +13,9 @@ import AgenceList from '../Component/RecuarmentAgence/AgenceList';
 
 
 class HomePages extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
 
         return (

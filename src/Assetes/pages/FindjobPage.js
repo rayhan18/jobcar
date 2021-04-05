@@ -7,7 +7,9 @@ import JobDetails from '../Component/FindJob/JobDetails';
 import logo1 from '../Images/logo1.jpg'
 
 export default class FindjobPage extends Component {
-
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     
     render() {
        

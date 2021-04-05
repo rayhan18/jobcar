@@ -4,6 +4,10 @@ import NavBar from "../Component/Navbar/NavBar";
 import Footer from "../Component/footer/Footer";
 
 class CreatYourCvPages extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+   
     render() {
         return (
             <Fragment>

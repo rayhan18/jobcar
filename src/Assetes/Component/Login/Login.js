@@ -37,8 +37,8 @@ export default function Login() {
           />
         </Form.Group>
         <smale>forget our password ?<Link className="text-danger" to="#">Click Heare</Link></smale>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
-          Login
+        <Button block size="lg" type="button" disabled={!validateForm()}>
+         <Link className ="text-white" to="/"> Login</Link>
         </Button>
       </Form>
     </div>

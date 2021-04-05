@@ -13,15 +13,15 @@ class NavBar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className=" navLink  mr-auto"  >
-                            <Nav.Link  > <NavLink className="text-white" to='/'> Home</NavLink></Nav.Link>
-                            <Nav.Link > <NavLink  className="text-white" to='/register'> Creat your CV</NavLink></Nav.Link>
+                            <Nav.Link  > <NavLink activeStyle={{color:"red"}} exact className="text-white" to='/'> Home</NavLink></Nav.Link>
+                            <Nav.Link > <NavLink activeStyle={{color:"#cc33ff"}} className="text-white" to='/register'> Creat your CV</NavLink></Nav.Link>
                             <Nav.Link ><Link  className="text-white"to ="/postjob">Post JOB</Link> </Nav.Link>
                             <Nav.Link > <Link   className="text-white" to ="/findjob">Find Job</Link></Nav.Link>
                             <Nav.Link > <Link  className="text-white" to ="/cvservice">Cv search</Link></Nav.Link>
                            
-                        </Nav>
+                </Nav>
                         <Nav>
-                            <Nav.Link><Link  className="text-white" to="#">Contact Us</Link></Nav.Link>
+                            <Nav.Link><Link  className="text-white" to="/contactus">Contact Us</Link></Nav.Link>
                             <Nav.Link><Link  className="text-white" to="/login"> Login</Link></Nav.Link>
                             <Nav.Link><Link  className="text-white" to="/register">Register</Link></Nav.Link>
                             

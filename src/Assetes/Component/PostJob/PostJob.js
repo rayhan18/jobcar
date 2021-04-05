@@ -130,7 +130,7 @@ class PostJob extends Component {
 
                 </Container>
                 <Container>
-                    <h2 className="mt-5 mb-3 cvHeading text-center"><strong>Frequently Asked Questions</strong></h2>
+                    <h2 className="mt-5 mb-3 cvHeading2 text-center"><strong>Frequently Asked Questions</strong></h2>
                       <Accordion>
                             <Card>
                                 <Card.Header>
@@ -203,15 +203,26 @@ You can try CV Search and look for top candidates by your target location.</Card
 
                 </Container>
                <Container>
-               <h4 className="mt-5 mb-3 cvHeading text-center">Contact Us</h4>
-
-              <div className="text-center">
-                                 <p>Ph:0966 123456789</p>
+               <h4 className="mt-5 mb-3 cvHeading2 text-center">Contact Us</h4>
+                   <Row className="text-center">
+                       <Col className="text-center">
+                       <p>Ph:0966 123456789</p>
                                  <p>Ph:0966 123456789</p>
                                  <p>Ph:0966 123456789</p>
                                  <p>Email: Jobcar@gmail.com</p><br/>
-                                 <img style={{width:'200px'}} src={calCenter} alt="calcenter"/>
-              </div>
+                       </Col>
+                       <Col>
+                       <img style={{width:'200px'}} src={calCenter} alt="calcenter"/>
+                       </Col>
+                       <Col>
+                       <p>Ph:0966 123456789</p>
+                                 <p>Ph:0966 123456789</p>
+                                 <p>Ph:0966 123456789</p>
+                                 <p>Email: Jobcar@gmail.com</p><br/>
+                       </Col>
+                       </Row>
+              
+
                    
                                
                    
