@@ -344,4 +344,14 @@ text-align: center;
 }
 
 
-
+/* ======contact us======= */
+.contactus{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+      -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+      -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+      margin-top: 10px;
+}
+.formStyle{
+  margin-top: 100px;
+  border-left: 2px solid;
+}
