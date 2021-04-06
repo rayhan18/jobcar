@@ -36,7 +36,7 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <smale>forget our password ?<Link className="text-danger" to="#">Click Heare</Link></smale>
+        <small>forget our password ?<Link className="text-danger" to="#">Click Heare</Link></small>
         <Button block size="lg" type="button" disabled={!validateForm()}>
          <Link className ="text-white" to="/"> Login</Link>
         </Button>

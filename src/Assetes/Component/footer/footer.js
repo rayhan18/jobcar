@@ -24,7 +24,7 @@ class Footer extends Component {
                         <Col lg={2} md={2} sm={12}>
                           <h5 className="mt-5 text-white">Company</h5>
                             <div className="footerA">
-                          <li className="  text-white">  <Link to ="/"> home</Link></li>
+                          <li className="  text-white">  <Link  to ="/"> home</Link></li>
                             <li className="  text-white"><Link to ="/"> about us</Link></li>
                            <li className="  text-white"> <Link to="/"> contact us</Link></li>
                            <li className="  text-white"> <Link to ="/"> prevecy policy</Link></li>
@@ -39,7 +39,7 @@ class Footer extends Component {
                            <li className="  text-white"> <Link to ="/"> about us</Link></li>
                             <li className="  text-white"><Link to ="/"href ="/"> contact us</Link></li>
                            <li className="  text-white"> <Link to ="/"> prevecy policy</Link></li>
-                           <li className="  text-white"> <Link Link to ="/"> home</Link></li>
+                           <li className="  text-white"> <Link  to ="/"> home</Link></li>
                             </div>
                         </Col>
                     </Row>

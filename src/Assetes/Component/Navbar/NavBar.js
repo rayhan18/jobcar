@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
-import logo from "../../Images/apple.jpg";
+import logo from "../../Images/joblogo.png";
 import {NavLink,Link} from 'react-router-dom'
 
 
@@ -13,17 +13,17 @@ class NavBar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className=" navLink  mr-auto"  >
-                            <Nav.Link  > <NavLink activeStyle={{color:"red"}} exact className="text-white" to='/'> Home</NavLink></Nav.Link>
-                            <Nav.Link > <NavLink activeStyle={{color:"#cc33ff"}} className="text-white" to='/register'> Creat your CV</NavLink></Nav.Link>
-                            <Nav.Link ><Link  className="text-white"to ="/postjob">Post JOB</Link> </Nav.Link>
-                            <Nav.Link > <Link   className="text-white" to ="/findjob">Find Job</Link></Nav.Link>
-                            <Nav.Link > <Link  className="text-white" to ="/cvservice">Cv search</Link></Nav.Link>
+                            <Nav.Link  as={Link}  className="text-white" to='/'> Home</Nav.Link>
+                            <Nav.Link  as={Link}  className="text-white" to='/register'> Creat your CV</Nav.Link>
+                            <Nav.Link as={Link} className="text-white"to ="/postjob">Post JOB </Nav.Link>
+                            <Nav.Link  as={Link}  className="text-white" to ="/findjob">Find Job</Nav.Link>
+                            <Nav.Link   as={Link} className="text-white" to ="/cvservice">Cv search</Nav.Link>
                            
                 </Nav>
                         <Nav>
-                            <Nav.Link><Link  className="text-white" to="/contactus">Contact Us</Link></Nav.Link>
-                            <Nav.Link><Link  className="text-white" to="/login"> Login</Link></Nav.Link>
-                            <Nav.Link><Link  className="text-white" to="/register">Register</Link></Nav.Link>
+                            <Nav.Link as={Link}  className="text-white" to="/contactus">Contact Us</Nav.Link>
+                            <Nav.Link as={Link} className="text-white" to="/login"> Login</Nav.Link>
+                            <Nav.Link as={Link} className="text-white" to="/register">Register</Nav.Link>
                             
                         </Nav>
                     </Navbar.Collapse>
