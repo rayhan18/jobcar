@@ -4,7 +4,7 @@ import logo1 from '../../Images/logo1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAngleDown, faArrowDown, faBaby, faBell, faFilter, faShare} from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios';
-
+import {Link} from 'react-router-dom'
 export default class JobDetails extends Component {
 constructor(){
     super()
@@ -42,7 +42,7 @@ constructor(){
                                 <p className="ml-1 mt-2"> Riyadh, Saudi Arabia Date Posted: Apr 1 </p>
                             </Media.Body>
                             </Media>
-                            <Button variant="primary mt-1">Apply Now</Button>
+                            <Button variant="primary mt-1"><Link className="text-white" to="/emploayregister">Apply Now</Link> </Button>
                             <OverlayTrigger
                                 placement="top"
                                 delay={{ show: 250, hide: 400 }}
@@ -84,8 +84,7 @@ constructor(){
                          </ul>
                   </Col>
                         <Col className="mt-5 contactus p-5" xs={12} sm={12} md={6} lg={4}>
-                           <h5>Add</h5>
-                           
+                           <h5>Add</h5>                           
                         </Col>
                     </Row>
                 </Container>

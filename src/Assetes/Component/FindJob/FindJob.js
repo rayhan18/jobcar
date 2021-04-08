@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {Card, Col, Container, Row,Button} from "react-bootstrap";
-
+import {Link} from 'react-router-dom'
 class FindJob extends Component {
 
     
@@ -16,8 +16,7 @@ class FindJob extends Component {
                    <Col>
                        <Card border="primary" style={{ width: '15rem' }}>
                             <Card.Header>Jobs by City</Card.Header>
-                            <Card.Body>
-                          
+                            <Card.Body>                         
                             <Card.Text>
                             <a href="#" > Jobs in Abha <span className="ml-5"> 30</span> </a><br/>
                            <a href="#" > Jobs in Abha <span className="ml-5"> 30</span> </a><br/>
@@ -31,8 +30,7 @@ class FindJob extends Component {
                            <a href="#" > Jobs in Abha <span className="ml-5"> 30</span> </a><br/>
                            <a href="#" > Jobs in Abha <span className="ml-5"> 30</span> </a><br/>
                            <a href="#" > Jobs in Abha <span className="ml-5"> 30</span> </a><br/>
-                           
-                      
+                                              
                             </Card.Text>
                             </Card.Body>
                         </Card>
@@ -111,7 +109,7 @@ class FindJob extends Component {
 
                     
                     <div className="text-center mt-5 ">
-                    <Button className="moreJobsButton"variant="outline-primary" size="lg">BROWSE MORE JOBS</Button>{' '}
+                    <Button className="moreJobsButton"variant="outline-primary" size="lg"><Link  to ="/findjob">BROWSE MORE JOBS</Link></Button>{' '}
                     </div>
                     
                     
