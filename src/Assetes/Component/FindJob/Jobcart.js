@@ -8,7 +8,10 @@ export default function Jobcart(props) {
    
     const imgStyle={
         width: '100px',
-         marginTop:' 22px'
+         marginTop:' 22px',
+         float:'right',
+         marginTop:'-100px',
+         display: 'flex'
     }
 
     const [postDatas,setPostData]= useState([])
@@ -28,22 +31,21 @@ export default function Jobcart(props) {
               {
                    postDatas.map(postData=>{
                        return(
-                            <Col  xs={12} sm={6} md={10} lg={12}>
-                            <Link to="#">
-                            <div  className="jobCart d-flex" key={postData.id}>
-                                    <h5 className="text-primary">{postData.title} <br/>
-                                  <small> Riyadh Mar 21</small>  </h5>
-                              <p className="text-secondary ml-5"> {postData.body} 
-                             Level:Mid Cereer<br/>  
-                             <small>{postData.id}</small> 
+                            <Col className="border jobCart" xs={12} sm={6} md={10} lg={12}>
+                            <Link to="/jobdetails">
+                            <div   key={postData.id}>
+                                    <h5 className="text-primary">{postData.id}.{postData.title}<small style={{color:'tomato'}}> (Riyadh Mar 21)</small> 
+                                  {/* <small> Riyadh Mar 21</small>  */}
+                                   </h5>
+                              <p className="text-secondary ml-5" style={{width: '850px'}}> {postData.body} <br/>
+                           <small className="text-info">  Level:Mid Cereer  </small>
+                           
                              </p>
                              <img  style={imgStyle}  src={logo1} alt="logo" />
                                 </div>
                                 </Link>
                 </Col>
-                // <Col className=" border-bottom"xs={12} sm={6} md={2} lg={2}>
-                // <img style={imgStyle}  src={logo1} alt="logo" />
-                // </Col> 
+                
                        
                        )  
               })

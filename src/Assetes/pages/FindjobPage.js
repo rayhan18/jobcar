@@ -3,7 +3,7 @@ import FindJob from '../Component/FindJob/FindJob'
 import NavBar from "../Component/Navbar/NavBar";
 import Footer from "../Component/footer/Footer";
 import FindJobMain from "../Component/FindJobMain/FindJobMain";
-import JobDetails from '../Component/FindJob/JobDetails';
+import JobHeading from '../Component/FindJob/JobHeading';
 import logo1 from '../Images/logo1.jpg'
 
 export default class FindjobPage extends Component {
@@ -17,12 +17,10 @@ export default class FindjobPage extends Component {
            
                 <Fragment>
                 <NavBar/>
-                {/* {
-                    images.map(image=><JobDetails image= {image}></JobDetails> )
-                } */}
-               <JobDetails imag={logo1}/>
-               {/* <FindJob/>
-               <FindJobMain/> */}
+               
+               <JobHeading />
+               {/* <FindJob/> */}
+               {/* <FindJobMain/> */}
                 <Footer/>
 
             </Fragment>

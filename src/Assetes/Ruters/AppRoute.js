@@ -10,6 +10,7 @@ import RegisterFormPage from '../pages/RegisterFormPage';
 import Loginpage from '../pages/Loginpage';
 import CvSearchPage from '../pages/CvSearchPage';
 import ContactUsPage from '../pages/ContactUsPage';
+import JobDetailsPage from '../pages/JobDetailsPage';
 
 export default class AppRoute extends Component {
      
@@ -29,6 +30,7 @@ export default class AppRoute extends Component {
                     <Route exact path="/login" component={Loginpage}/> 
                     <Route exact path="/cvservice" component={CvSearchPage}/> 
                     <Route exact path="/contactus" component={ContactUsPage}/> 
+                    <Route exact path="/jobdetails" component={JobDetailsPage}/> 
                 </Switch>
                 
             </Fragment>

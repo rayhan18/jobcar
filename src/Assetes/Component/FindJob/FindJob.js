@@ -9,7 +9,7 @@ class FindJob extends Component {
             <Fragment>
                 <Container >
                     <div >
-                        <h2 className=" JobHeading  ">Find Jobs in Your Country</h2><hr/>
+                        <h2 className=" JobHeading  ">Find Jobs in Your City</h2><hr/>
                     </div>
 
                    <Row>

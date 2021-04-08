@@ -10,6 +10,7 @@ import History from "../Component/History/History";
 import FindJobMain from "../Component/FindJobMain/FindJobMain";
 import PostJob from "../Component/PostJob/PostJob";
 import AgenceList from '../Component/RecuarmentAgence/AgenceList';
+import FindJobByCountry from '../Component/FindJob/FindJobByCountry';
 
 
 class HomePages extends Component {
@@ -25,7 +26,7 @@ class HomePages extends Component {
                 <PopulerSerch title="Popular Searches in Saudi Arabia"/>
                
                 <FindJob/>
-              
+              <FindJobByCountry/>
                  <Hiring/>
                 <AgenceList/>
 

@@ -1,48 +1,95 @@
 import React, { Component } from 'react'
-import { Fragment } from 'react'
-import { Container, Row,Col, Button,Accordion ,Card} from 'react-bootstrap'
+import { Container,Row,Col,Media, Button,OverlayTrigger,Tooltip } from 'react-bootstrap'
+import logo1 from '../../Images/logo1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCheckCircle} from '@fortawesome/free-regular-svg-icons'
-import {faBrefcase} from '@fortawesome/free-solid-svg-icons'
-import Jobcart from './Jobcart';
-import JobFilter from './JobFilter';
+import {faAngleDown, faArrowDown, faBaby, faBell, faFilter, faShare} from '@fortawesome/free-solid-svg-icons'
+import axios from 'axios';
 
 export default class JobDetails extends Component {
-    constructor(props){
-        super(props)
+constructor(){
+    super()
+    this.state={
+        imgs:''
+    }
+}
+    componentDidMount(){
+        const url='https://jsonplaceholder.typicode.com/photos'
+        axios.get(url).then(response=>{
+            this.setState({imgs:response.data})
+        }).catch(error=>{
+            alert(error.message)
+        })
     }
     render() {
-        const btnStyle={
-            borderRadius:'20px'
+     const   imgStyle={
+        width:70,
+        marginTop:'10px'
         }
+        const renderTooltip = (props) => (
+            <Tooltip id="button-tooltip" {...props}>
+             Job Alert
+            </Tooltip>
+          );
         return (
-            <Fragment>
-                <Container fluid={true} className="mt-5">
-                    <Row className="mt-5 bg-light">
-                        <Col xs={12} sm={6} md={3} lg={3}>
-                            <h5 className="mt-5"><FontAwesomeIcon icon={faCheckCircle}> </FontAwesomeIcon>Filter</h5>
-                       
-                                   <JobFilter>
-                                       
-                                   </JobFilter>
-                        </Col>
-                        <Col xs={12} sm={6} md={9} lg={9}>
-                           <div>
-                               <h3> Jobs in Saudi Arabia</h3>
-                               <p>6114 Jobs Found: Showing 1 -20</p><hr/>
-                               <div className='d-flex border-bottom p-1'>
-                               <h3>Would you like receive more jobs similar to this search?</h3> <hr/>
-                               <Button style ={btnStyle} className='outline-primary ml-auto'>creat job alert</Button> <hr/>
+            <div>
+                <Container >
+                    <Row className="mt-5">
+                        <Col  className="mt-5 contactus p-5" xs={12} sm={12} md={6} lg={8}>
+                        <Media>
+                        <img style={imgStyle} src={logo1} alt="logo" />
+                            <Media.Body>
+                                <h5 className="ml-1 mt-2"> Gulf Central</h5>
+                                <p className="ml-1 mt-2"> Riyadh, Saudi Arabia Date Posted: Apr 1 </p>
+                            </Media.Body>
+                            </Media>
+                            <Button variant="primary mt-1">Apply Now</Button>
+                            <OverlayTrigger
+                                placement="top"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltip}
+                            >
+                                 <FontAwesomeIcon className="ml-3" icon={faBell} />
                               
-                               </div>
-                              <Jobcart />
-                               
-                              
-                           </div>
+                            </OverlayTrigger>,
+                           
+                                 <FontAwesomeIcon className="ml-3" icon={faShare} /><hr/>
+                              <h5>Job Description</h5>
+                           <p>The Supply Chain Manager (SCM) provides proactive leadership and strategic direction in the areas of operational planning and distribution planning and procurement planning. The SCM is responsible for all SC personnel, processes, systems, and system data, and for causing the optimal flow of products, and information and in a manner, which efficiently support the customer requirements.</p>
+                         <h6>Primary duties and responsibilities are:</h6>
+                         <ul>
+                             <li>Plan and implement the overall supply chain strategy for warehouses and branches. </li>
+                             <li>Plan and implement the overall supply chain strategy for warehouses and branches. </li>
+                             <li>Plan and implement the overall supply chain strategy for warehouses and branches. </li>
+                             <li>Plan and implement the overall supply chain strategy for warehouses and branches. </li>
+                             <li>Plan and implement the overall supply chain strategy for warehouses and branches. </li>
+                             <li>Plan and implement the overall supply chain strategy for warehouses and branches. </li>
+                             <li>Plan and implement the overall supply chain strategy for warehouses and branches. </li>
+                         </ul>
+                         <p>Candidate Requirements:</p>
+                         <ul>
+                             <li>Strong verbal and written communication skills required.</li>
+                             <li>Strong verbal and written communication skills required.</li>
+                             <li>Strong verbal and written communication skills required.</li>
+                             <li>Strong verbal and written communication skills required.</li>
+                             <li>Strong verbal and written communication skills required.</li>
+                             <li>Strong verbal and written communication skills required.</li>
+                             <li>Strong verbal and written communication skills required.</li>
+                         </ul>
+                         <p>Education and Experience:</p>
+                         <ul>
+                             <li>Four-year degree from a University or College in Business Administration and/or related fields required.</li>
+                             <li>An equivalent combination of education and experience will be considered.</li>
+                             <li>Four-year degree from a University or College in Business Administration and/or related fields required.</li>
+                            
+                         </ul>
+                  </Col>
+                        <Col className="mt-5 contactus p-5" xs={12} sm={12} md={6} lg={4}>
+                           <h5>Add</h5>
+                           
                         </Col>
                     </Row>
                 </Container>
-            </Fragment>
+            </div>
         )
     }
 }
