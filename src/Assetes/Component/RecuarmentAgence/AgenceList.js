@@ -22,9 +22,9 @@ export default class AgenceList extends Component {
                     <h2 className="text-center text-white p-5 ">Jobs Through Top Recruitment Agencies</h2>
                         <Row>
 
-                            <Col xs={12} sm={6} md={3} lg={3} >
+                            <Col xs={12} sm={6} md={6} lg={3} >
                            
-                                   <Card style={{ width: '18rem', border:'5px solid lightgrea' }}>
+                                   <Card style={{ width: '18rem', border:'5px solid lightgrea',marginBottom:'10px' }}>
                                 <Card.Img variant="top" src={creativeLogo} />
                                 <Card.Body>
                                     <Card.Title className="text-center">Job post 16</Card.Title>
@@ -33,7 +33,7 @@ export default class AgenceList extends Component {
                                 </Card>
                                                           
                             </Col>
-                            <Col xs={12} sm={6} md={3} lg={3} >
+                            <Col xs={12} sm={6} md={6} lg={3} >
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img style={{    height: '216px'}} variant="top" src={LogoDesign} />
                                 <Card.Body>
@@ -42,7 +42,7 @@ export default class AgenceList extends Component {
                                 </Card.Body>
                                 </Card>
                             </Col>
-                            <Col xs={12} sm={6} md={3} lg={3} >
+                            <Col xs={12} sm={6} md={6} lg={3} >
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img  style={{    height: '216px'}}variant="top" src={LogoBismi} />
                                 <Card.Body>
@@ -51,7 +51,7 @@ export default class AgenceList extends Component {
                                 </Card.Body>
                                 </Card>
                             </Col>
-                            <Col xs={12} sm={6} md={3} lg={3} >
+                            <Col xs={12} sm={6} md={6} lg={3} >
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img style={{    height: '216px'}} variant="top" src={LogoInternet} />
                                 <Card.Body>

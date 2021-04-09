@@ -26,7 +26,7 @@ export default class CvSearce extends Component {
             <Fragment>
                 <Container fluid={true} className="mt-5 cvHeader">
                    <Row  className=" cvHeader">
-                   <Col className="text-center mt-5">
+                   <Col  className="text-center mt-5">
                        <h2 className="text-white bg-primary p-2">Choose your CV template</h2>
                    <h2>Jobcar.com </h2>
                     <p>Find the perfect candidate.</p>
@@ -42,8 +42,8 @@ export default class CvSearce extends Component {
                     <Col style={sidebarStyle} xs={12} sm={12} md={4} lg={3}>
                        <PopulerSerch  title="Popular Searches in World" />
                         </Col>
-                        <Col  xs={12} sm={12} md={9} lg={9}>
-                        <CvCard/>
+                        <Col  xs={12} sm={12} md={8} lg={9}>
+                           <CvCard/>
                             <CvCard />
                             <CvCard/>
                         </Col>

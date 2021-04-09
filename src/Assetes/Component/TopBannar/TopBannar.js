@@ -8,14 +8,14 @@ class TopBannar extends Component {
             <Container fluid={true} className="TopBennar">
               <Container className="topContent">
                   <Row>
-                      <Col>
+                      <Col >
                           <h1 className="contentH1">FIND JOBS, NETWORK AND LEARN</h1>
                           <h5 className="text-white">Join the Populer Job Site</h5>
                           
                       </Col>
                   </Row>
                   <Row className="formStyle">
-                 <Col>
+                  <Col>
                  <Form className="formControl">
                     <Form.Row className="formControl">
                     <Form.Group as={Col} controlId="formGridTitle">

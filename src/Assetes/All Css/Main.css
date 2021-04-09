@@ -105,6 +105,7 @@ h1,h2{
 .JobHeading:hover{
   color: #007bff;
 }
+
 /* find job card box
 ================================================*/
 .cardBox{
@@ -147,7 +148,8 @@ text-align: center;
   padding: 10px;
 }
 .carouselBtn{
-  margin-left:500px;
+  margin-left:auto;
+  margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -269,6 +271,9 @@ text-align: center;
  
  background-color: rgb(234, 241, 247);
  
+}
+.jobContent{
+  width:850px;
 }
 /* //==============login==================== */
 

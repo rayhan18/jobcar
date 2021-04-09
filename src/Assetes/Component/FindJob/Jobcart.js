@@ -10,7 +10,7 @@ export default function Jobcart(props) {
         width: '100px',
          marginTop:' 22px',
          float:'right',
-         marginTop:'-100px',
+         marginTop:'-150px',
          display: 'flex'
     }
 
@@ -37,7 +37,7 @@ export default function Jobcart(props) {
                                     <h5 className="text-primary">{postData.id}.{postData.title}<small style={{color:'tomato'}}> (Riyadh Mar 21)</small> 
                                   {/* <small> Riyadh Mar 21</small>  */}
                                    </h5>
-                              <p className="text-secondary ml-5" style={{width: '850px'}}> {postData.body} <br/>
+                              <p className="text-secondary ml-5 jobContent" > {postData.body} <br/>
                            <small className="text-info">  Level:Mid Cereer  </small>
                            
                              </p>

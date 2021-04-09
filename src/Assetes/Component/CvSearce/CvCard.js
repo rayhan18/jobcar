@@ -27,7 +27,7 @@ export default class CvCard extends Component {
             <Fragment>
                 <Container>
                     <Row className="mt-3">
-                    <Col xs={12} sm={12} md={6} lg={12}>
+                    <Col >
                             <Card border="primary" >
                                 <Card.Header>{name}</Card.Header>
                                 <Card.Body>
